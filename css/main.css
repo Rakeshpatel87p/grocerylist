@@ -3,7 +3,7 @@ body {
 	border-radius: 2em;
 	width:50%;
 	margin: 1rem auto 0 auto;
-	height:40em;
+	height:auto;
 	text-align:center;
 	font-family: 'Josefin Slab', serif;
 }
@@ -31,6 +31,10 @@ h1{
 	left:12em;
 }
 
+.list {
+	margin-bottom:2em;
+}
+
 .listitems ul {
 	list-style-type: none;
 	padding-bottom: 0;
@@ -48,7 +52,7 @@ h1{
 .status{
 	position:absolute;
 	right:26em;
-	top:18.1em;
+	top:19.4em;
 
 }
 
