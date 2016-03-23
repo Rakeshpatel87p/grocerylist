@@ -9,36 +9,28 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
     <div class="content">
         <div class="title">
             <h1>Grocery List</h1>
         </div>
         <div class="textbox">
-            <p>Add New Item Here<br /><input type="text" name="newitem"></p>
+            <p>Add New Item Here
+                <br />
+                <input type="text" name="newitem">
+            </p>
             <i class="fa fa-check fa-2x" id="newitem_button"></i>
         </div>
         <div class="listitems">
             <ul class="list">
-                <li>Onions</li>
-                <li>Tomatoes</li>
-                <li>Cilantro</li>
-                <li>Avocados</li>
+                <li><i class="fa fa-check" id="first_check"></i><i class="fa fa-trash-o"></i>Onions</li>
+                <li><i class="fa fa-check"></i><i class="fa fa-trash-o"></i>Chapatis</li>
+                <li><i class="fa fa-check"></i><i class="fa fa-trash-o"></i>Cilantro</li>
+                <li><i class="fa fa-check"></i><i class="fa fa-trash-o"></i>Collard Greens</li>
             </ul>
         </div>
-        <div class="status">
-            <i class="fa fa-check"></i>
-            <i class="fa fa-trash-o"></i>
-            <br />
-            <i class="fa fa-check"></i>
-            <i class="fa fa-trash-o"></i>
-            <br />
-            <i class="fa fa-check"></i>
-            <i class="fa fa-trash-o"></i>
-            <br />
-            <i class="fa fa-check"></i>
-            <i class="fa fa-trash-o"></i>
-        </div>
+
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
     <script src="js/main.js"></script>
