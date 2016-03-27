@@ -28,7 +28,7 @@ h1{
 	float:right;
 	position:absolute;
 	top:4.4em;
-	left:12em;
+	left:12.1em;
 }
 
 .fa-check {
@@ -56,6 +56,10 @@ h1{
 	font-size:24px;
 }
 
+.toggle_strike {
+	text-decoration: line-through;
+}
+
 .status_trash{
 	position:absolute;
 	right:29em;
@@ -75,12 +79,23 @@ h1{
 .list .fa-check {
 	position:absolute;
 	left:18em;
+	opacity:0.2;
+}
+
+.fa-check:hover {
+	opacity:1;
+	cursor: pointer;
+
 }
 
 .list .fa-trash-o{
-	border:0.1rem solid red;
+	color:red;
 	padding:0.2em;
 	border-radius: 0.5em;
 	position:absolute;
 	right:18.5em;
+}
+
+.fa-trash-o:hover {
+	cursor: pointer;
 }
