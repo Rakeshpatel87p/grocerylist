@@ -16,14 +16,14 @@ $("#newitem_button").on("click", function() {
         // $("#newitem_button").click(); //Trigger search button click event
         // } });
 
-        $(".list .fa-check").on("click", function() {
+        $(".list .fa-check:last").on("click", function() {
             $(this).siblings("span").toggleClass("toggle_strike");
             console.log("hey");
 
 
         });
 
-        $(".list .fa-trash-o").click(function() {
+        $(".list .fa-trash-o:last").click(function() {
             $(this).parent().fadeOut("fast", function() {
                 $(this).remove();
             })
