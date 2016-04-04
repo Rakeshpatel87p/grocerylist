@@ -3,18 +3,17 @@ $(document).ready(function() {
         $(this).select();
 
     });
+    $("form").submit(function(e) {
+        e.preventDefault();
+        listitems();
 
-$("#newitem_button").on("click", function() {
+
+    });
+
+    function listitems() {
         var newlistitem = $("input").val();
         $(".listitems ul").append("<li><i class='fa fa-check'></i><i class='fa fa-trash-o'></i><span>" + newlistitem + "</span></li>");
         console.log("hey");
-
-
-
-        // $("#textbox").keypress(function(e) {
-        // if (e.which == 13) { //Enter key pressed
-        // $("#newitem_button").click(); //Trigger search button click event
-        // } });
 
         $(".list .fa-check:last").on("click", function() {
             $(this).siblings("span").toggleClass("toggle_strike");
@@ -30,7 +29,10 @@ $("#newitem_button").on("click", function() {
 
         });
 
+    };
+    $("#newitem_button").on("click", function() {
+        listitems();
+
     });
 
 });
-
